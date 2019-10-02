@@ -1,23 +1,18 @@
 # rsBot
-Objective: The goal of this project is to create a bot that will generate in-game wealth for the game of “Old School” Runescape. 
-The market in the Runescape follows many aspects of the real-world market so we manipulate the market in order to make a profit 
-through the possible use of real-world strategies. 
+Objective: The goal of this project is to create a bot that will generate in-game wealth for the game Old School RuneScape. 
+We use "flipping" and certain mechanics of the in-game trading mechanism, the Grand Exchange, to make a profit.
 
 DUE TO BOTTING BEING ILLEGAL IN RUNESCAPE, I WILL STRICLY POST MY CODE AND NOT ANY FURTHER REQURED FILES. 
 OTHER SCREENSHOTS AND IMAGES ARE REQUIRED TO FULLY RUN THE CODE
 
+The bot was simply made as an exercise, and is not intended to be used on a massive scale for profit. 
 
-In order to tackle our objective, there are different strategies we can implement:
--Creating a Grand Exchange Flipping bot which will analyze the current market for a specified list of items and 
-determine which items can be bought for a low price and sold for a higher one.
+# Strategy
+We use an third party API called GE Tracker to determine current prices of certain items.
 
--RS - In-Depth Beginners Flipping Guide <- READ
+We determine which items are best to trade at the current time by scraping the top 100 most traded items from an official RuneScape page, and using the GE Tracker API to fetch item information.
 
--Because we will not be keeping track on updates for the game, we do not have the advantage 
-of other merchants of being able to scout items that can be profitable later on
+We sort the top 100 items to determine which will likely be the most profitable.
 
--Most of our investments should be short-term
+We use pyautogui/pytesseract to automate buying and selling of the most promising items.
 
--Our strategy should be focused on analyzing the buy/sell margins on an item to determine whether or not we can profit from it
-
--We should cut our losses short, for example, if an item has not sold for an elongated period of time, we should not dwell on that item and the price we have put it at and try to calculate a different price or just move on to another item
