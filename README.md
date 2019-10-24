@@ -16,3 +16,10 @@ We sort the top 100 items to determine which will likely be the most profitable.
 
 We use pyautogui/pytesseract to automate buying and selling of the most promising items.
 
+# Progress
+
+- [x] Use GE-Tracker API to retrieve item information
+- [] Store in a local database for historical data
+- [] Determine future profitability of items based on historical data
+- [x] Automate money checking
+- [] Automate buying and selling
