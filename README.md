@@ -19,7 +19,7 @@ We use pyautogui/pytesseract to automate buying and selling of the most promisin
 # Progress
 
 - [x] Use GE-Tracker API to retrieve item information
-- [] Store in a local database for historical data
-- [] Determine future profitability of items based on historical data
+- [ ] Store in a local database for historical data
+- [ ] Determine future profitability of items based on historical data
 - [x] Automate money checking
-- [] Automate buying and selling
+- [ ] Automate buying and selling
